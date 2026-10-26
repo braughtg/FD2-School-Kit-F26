@@ -16,16 +16,16 @@ async function submitForm(form) {
      * This will need to be modified to create the actual
      * assets, quantities and logs needed for the entry point.
      */
-    return await farmosUtil.createPlantAsset(
+    return await farmosUtil.createObservationLog(
       form.date,
-      'ZUCCHINI',
+      form.type,
       form.comment
     );
   } catch (error) {
-    console.error('%ENTRY_POINT% lib.js:');
+    console.error('activity_observation lib.js:');
     console.error(error);
 
-    let errorMsg = 'Error creating %ENTRY_POINT_TITLE% records.';
+    let errorMsg = 'Error creating activity_observation record.';
     throw Error(errorMsg, error);
   }
 }
