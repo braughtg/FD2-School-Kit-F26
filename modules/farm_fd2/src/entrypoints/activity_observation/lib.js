@@ -50,13 +50,6 @@ async function submitForm(form) {
       name: 'sampleOp',
       do: async () => {
         /*
-         * Add a little delay here so to be sure the e2e tests have
-         * enough time to see the "Submitting" toast.  Production
-         * operations should not include this.
-         */
-        await new Promise((r) => setTimeout(r, 2000));
-
-        /*
          * Create and return the asset, log or quantity for
          * this operation using the functions in farmosUtil.
          */
