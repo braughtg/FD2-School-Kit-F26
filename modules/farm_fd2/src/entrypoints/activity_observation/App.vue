@@ -311,15 +311,15 @@
             'success'
           );
 
-          /*
-           * Use the `submitForm()` function in `lib.js` to build
-           * assets, logs and quantities based on the values in `data.form`
-           * and submit them to farmOS.  We pass a copy of this.form so
-           * that the tests in activity_observation.submission.e2e.cy.js and
-           * activity_observation.submitError.e2e.cy.js have their own copy that
-           * is not modified when the form is reset during testing.
-           */
           try {
+            /*
+             * Use the `submitForm()` function in `lib.js` to build
+             * assets, logs and quantities based on the values in `data.form`
+             * and submit them to farmOS.  We pass a copy of this.form so
+             * that the tests in activity_observation.submission.e2e.cy.js and
+             * activity_observation.submitError.e2e.cy.js have their own copy that
+             * is not modified when the form is reset during testing.
+             */
             await lib.submitForm({ ...this.form });
 
             /*
