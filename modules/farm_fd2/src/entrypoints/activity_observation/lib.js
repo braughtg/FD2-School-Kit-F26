@@ -12,9 +12,7 @@ import * as farmosUtil from '@libs/farmosUtil/farmosUtil';
 async function submitForm(form) {
   try {
     /*
-     * Create a `ZUCCHINI` plant asset as an example.
-     * This will need to be modified to create the actual
-     * assets, quantities and logs needed for the entry point.
+     * Create a farmOS observation log documenting the activity observation.
      */
     return await farmosUtil.createObservationLog(
       form.date,

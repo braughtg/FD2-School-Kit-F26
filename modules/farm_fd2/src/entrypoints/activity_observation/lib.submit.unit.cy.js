@@ -37,7 +37,7 @@ describe('Test the Activity Observation lib submission', () => {
     cy.saveSessionStorage();
   });
 
-  it('Activity Observation: Placeholder checks the result', () => {
+  it('Activity Observation: checks the result', () => {
     /*
      * Check to be sure we get a plant asset.  This confirms that the lib.js
      * operation created the correct type of farmOS record.
