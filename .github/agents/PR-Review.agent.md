@@ -8,8 +8,8 @@
 - Read the criteria to be used for the review from the file in `criteria` that is indicated in the prompt.
 - Use only the criteria given in this file to perform the review. Do not perform any other checks or reviews.
 - Each level-two heading in the criteria file defines a "Section"
-- Each unindented bullet under a level-two heading defines a "Primary Criterion"
-- Each bullet indented under a "Primary Criterion" indicates a "Secondary Criterion" for that "Primary Criterion"
+- Each unindented bullet in a "Section" defines a "Primary Criterion". A "Section" may contain multiple "Primary Criterion".
+- Each bullet indented under a "Primary Criterion" indicates a "Secondary Criterion" for that "Primary Criterion". A "Primary Criterion" may have multiple "Secondary Criterion".
 - A "Primary Criterion" is "Fully Met" if it and all of its "Secondary Criterion" are satisfied.
 - A "Primary Criterion" is "Partially Met" if more than 75% of its "Secondary Criterion" are satisfied.
 - A "Primary Criterion" is "Not Met" if less than 25% of its "Secondary Criterion" are not satisfied.
@@ -21,5 +21,8 @@
 - Summarize the "Primary Criterion" in the `Criteria` cell.
 - Fill the `Status` cell with ✅ if the criteria is "Fully Met", ⚠️ if the criteria is "Partially Met", or ❌ if the criteria is "Not Met".
 - In the `Evidence` cell, state whether the "Primary Criterion" is "Fully Met", "Partially Met" or "Not Met" and address each "Secondary Criterion", indicating which are met and which are unmet. Give code snippets and cite relevant files and line numbers as support.
+- Before writing the tables, enumerate every unindented bullet under each "Section" in source order. Treat each bullet as a separate "Primary Criterion", even when multiple bullets are related.
+- For each "Section", create exactly one table row for each enumerated "Primary Criterion", in the same order. Do not combine criteria in one row or split one criterion across rows.
+- Before responding, verify that each "Section"'s table row count exactly matches its number of unindented bullets. If the counts differ, correct the tables before responding.
 - Include only the required headings and tables. Do not add a final verdict, extra findings, or a summary outside the tables.
 - Post the full exact results to a PR comment or to the chat as appropriate. Do not reformat, reword, summarize, or condense any tables.
