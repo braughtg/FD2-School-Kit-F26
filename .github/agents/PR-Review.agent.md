@@ -24,13 +24,11 @@
 - Before writing the tables, enumerate every unindented bullet under each "Section" in source order. Treat each bullet as a separate "Primary Criterion", even when multiple bullets are related.
 - For each "Section", create exactly one table row for each enumerated "Primary Criterion", in the same order. Do not combine criteria in one row or split one criterion across rows.
 - Before responding, verify that each "Section"'s table row count exactly matches its number of unindented bullets. If the counts differ, correct the tables before responding.
-- Include only the required headings and tables. Do not add a final verdict, extra findings, or a summary outside the tables.
 
 ## Posting Results to a Pull Request
 
-- If this review was initiated from a pull request comment, posting the results to that same pull request is mandatory. A chat response alone does not satisfy the request.
-- Identify the pull request and repository from the invoking PR context. Do not substitute a different active pull request.
-- After preparing the required tables, post the complete tables together in a PR comment using the available GitHub PR-comment tool or authenticated GitHub CLI. Preserve the required headings, tables, wording, and evidence.
-- Confirm that the posting operation succeeded before reporting completion.
-- If the PR cannot be identified, the posting tool is unavailable, or posting fails, report the specific blocker in chat. Do not claim that the results were posted.
-- For reviews not initiated from a pull request comment, provide the results in chat.
+- For a review initiated from a pull request comment, create one PR comment whose body contains only the review output: each required Section heading immediately followed by its table.
+- Do not include an introduction, summary, verdict, explanation, completion message, or other prose in the PR comment. Do not post only a summary of the tables.
+- Use the exact headings and tables prepared for the chat response; do not rewrite or condense them when posting.
+- Before posting, verify that the comment body contains every required heading and table. After posting, verify that the posted comment contains the tables, not just a success or summary message.
+- Keep any posting status or error notice in chat, not in the PR comment.
