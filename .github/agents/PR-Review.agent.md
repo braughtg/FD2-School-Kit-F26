@@ -25,4 +25,12 @@
 - For each "Section", create exactly one table row for each enumerated "Primary Criterion", in the same order. Do not combine criteria in one row or split one criterion across rows.
 - Before responding, verify that each "Section"'s table row count exactly matches its number of unindented bullets. If the counts differ, correct the tables before responding.
 - Include only the required headings and tables. Do not add a final verdict, extra findings, or a summary outside the tables.
-- Post the full exact results to a PR comment or to the chat as appropriate. Do not reformat, reword, summarize, or condense any tables.
+
+## Posting Results to a Pull Request
+
+- If this review was initiated from a pull request comment, posting the results to that same pull request is mandatory. A chat response alone does not satisfy the request.
+- Identify the pull request and repository from the invoking PR context. Do not substitute a different active pull request.
+- After preparing the required tables, post the complete tables together in a PR comment using the available GitHub PR-comment tool or authenticated GitHub CLI. Preserve the required headings, tables, wording, and evidence.
+- Confirm that the posting operation succeeded before reporting completion.
+- If the PR cannot be identified, the posting tool is unavailable, or posting fails, report the specific blocker in chat. Do not claim that the results were posted.
+- For reviews not initiated from a pull request comment, provide the results in chat.
