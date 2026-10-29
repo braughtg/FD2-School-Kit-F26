@@ -24,11 +24,7 @@
 - Before writing the tables, enumerate every unindented bullet under each "Section" in source order. Treat each bullet as a separate "Primary Criterion", even when multiple bullets are related.
 - For each "Section", create exactly one table row for each enumerated "Primary Criterion", in the same order. Do not combine criteria in one row or split one criterion across rows.
 - Before responding, verify that each "Section"'s table row count exactly matches its number of unindented bullets. If the counts differ, correct the tables before responding.
-
-## Posting Results to a Pull Request
-
-- For a review initiated from a pull request comment, create one PR comment whose body contains only the review output: each required Section heading immediately followed by its table.
+- Post the full results generated as a single comment on the pull request for the branch. If no pull request is open, post the results to the chat.
 - Do not include an introduction, summary, verdict, explanation, completion message, or other prose in the PR comment. Do not post only a summary of the tables.
-- Use the exact headings and tables prepared for the chat response; do not rewrite or condense them when posting.
+- Use the exact headings and tables prepared; do not rewrite or condense them when posting.
 - Before posting, verify that the comment body contains every required heading and table. After posting, verify that the posted comment contains the tables, not just a success or summary message.
-- Keep any posting status or error notice in chat, not in the PR comment.
