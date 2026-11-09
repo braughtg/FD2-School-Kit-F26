@@ -14,6 +14,11 @@
     data-cy="activity_type_selector"
     v-bind:required="required"
     v-bind:showValidityStyling="validity.showStyling"
+    v-on:update:selected="
+      (selected) => {
+        form.selected = selected;
+      }
+    "
     v-on:valid="
       (valid) => {
         validity.valid = valid;
@@ -70,6 +75,10 @@
     </thead>
     <tbody>
       <tr>
+        <td>selected</td>
+        <td>{{ form.selected }}</td>
+      </tr>
+      <tr>
         <td>valid</td>
         <td>{{ validity.valid }}</td>
       </tr>
@@ -108,6 +117,7 @@ export default {
          * form element is passed to lib.js, which uses it to submit data to
          * the farmOS server.
          */ 
+        selected: '',
       },
       validity: {
         /* 
