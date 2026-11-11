@@ -11,6 +11,7 @@
         invalidFeedbackText="An activity type is required."
         v-bind:options="activityTypes"
         v-bind:required="required"
+        v-bind:selected="selected"
         v-bind:showValidityStyling="showValidityStyling"
         v-on:valid="handleValid"
         v-on:update:selected="handleSelected"
@@ -63,13 +64,13 @@
         type: Boolean,
         default: false,
       },
-      // /**
-      //  * The currently selected activity type.
-      //  */
-      // selected: {
-      //   type: String,
-      //   default: '',
-      // },
+      /**
+       * The currently selected activity type.
+       */
+      selected: {
+        type: String,
+        default: '',
+      },
       /**
        * Whether validity styling should appear on input elements.
        */
