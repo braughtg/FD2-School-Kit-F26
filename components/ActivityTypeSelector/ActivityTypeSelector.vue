@@ -38,9 +38,19 @@
    * ## Usage Example
    *
    * ```html
-   * Include an example of how to add this component to a template.
-   * This can often be pulled from the example page for the component.
-   * See the other components in the `components` directory for samples.
+   * <ActivityTypeSelector
+   *   id="activity-observation-type"
+   *   data-cy="activity-observation-type"
+   *   required
+   *   v-model:selected="form.type"
+   *   v-bind:showValidityStyling="validity.show"
+   *   v-on:valid="
+   *     (valid) => {
+   *       validity.type = valid;
+   *     }
+   *   "
+   *   v-on:ready="createdCount++"
+   * />
    * ```
    *
    * ## `data-cy` Attributes
